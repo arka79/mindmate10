@@ -50,7 +50,7 @@ class ChatbotApp(toga.App):
         self.chat_label.text = self.chat_history
 
     def get_gemini_response(self, message):
-        url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBWvFzABavcN0fB3mF1t6CK9WztN0_7SKk'
+        url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key='
         headers = {'Content-Type': 'application/json'}
         data = {
             "contents": [
